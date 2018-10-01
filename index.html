@@ -2,12 +2,22 @@
  <html>
     <head>
         <title> My Website</title>
-        <style>
+        <style> 
+            ::-moz-selection {
+                background: rgba(52,58,64,0.9);
+                color: white;
+            }
+            ::selection {
+                background: rgba(52,58,64,0.9);
+                color: white;
+            }
             body {
-                background-color: Black;
+                background-image: url("https://media0.giphy.com/media/BHNfhgU63qrks/giphy.gif?cid=3640f6095bb2a18c727a305873ac5f86");
+                background-size: 100%;
                 color: rgb(45, 45, 45);
                 padding: 10px;
                 font-family: arial;
+                
             }
             h1 {
                 font-size: 20px;
@@ -28,14 +38,15 @@
     
             /* navigation menu */
             nav {
-                background-color: Red;
+                background-color: purple;
                 margin-bottom:20px;
                 display: flex;
                 padding: 10px;
+                border-radius 50%;
             }
             nav header {
                 display: flex;
-                align-items: center;
+                align-items: right;
                 color: rgb(255, 255, 255);
                 flex: 1;
             }
@@ -52,21 +63,16 @@
                 text-decoration: none;
                 color: #fff;
             }
-            nav img #example1 {
+            nav img  {
                 border: 2px solid red;
-                border-radius: 25px;
+                border-radius: 50%;
             }
-
-            nav img #example2 {
-                border: 2px solid red;
-                border-radius: 50px 20px;
-            }
-    
             /* main container area beneath menu */
             main {
-                color: blue;
-                background: rgb(255, 255, 255);
+                color: black;
+                background-color: purple;
                 display: flex;
+                border-radius: 10em;
             }
             .sidebar {
                 margin-right: 25px;
@@ -74,6 +80,8 @@
             }
             .sidebar img {
                 width: 200px;
+                border-radius: 50%;
+                shape-outside: circle();
             }
             .content {
                 padding: 15px;
