@@ -26,12 +26,6 @@
     platform.init = function (game) {
         ////////////////////////////////////////////////////////////////////////
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
-        platform.create(x, y, scaleX, scaleY);
- 
-        x: The x coordineate for the platform.
-        y: The y coordineate for the platform.
-        scaleX: OPTIONAL The scale factor on the x-axis, this value will stretch the platform in width.
-        scaleY: OPTIONAL The scale factor on the y-axis, this value will stretch the platform in height.
         /*
          * ground : here, we create a floor. Given the width of of the platform 
          * asset, giving it a scaleX and scaleY of 2 will stretch it across the 
@@ -42,7 +36,7 @@
         // example:
         platform.create(400, 460);
         platform.create(500, 200);
-        
+        platform.create(300, 200);
         
         
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
